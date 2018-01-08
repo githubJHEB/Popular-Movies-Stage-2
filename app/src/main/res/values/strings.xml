@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Movies App</string>
+    <string name="pref_Order_of_the_movies_label"  translatable="false">Order of the movies</string>
+    <string name="pref_Order_of_the_movies_key" translatable="false">Order</string>
+    <string name="pref_Order_of_the_movies_default">Most popular</string>
+
+    <string name="pref_Order_of_the_movies_label_Most_Popular" translatable="false">Most_Popular</string>
+
+    <string name="pref_Order_of_the_movies_label_Highest_rated" translatable="false">Highest_rated</string>
+
+    <string name="pref_Order_of_the_movies_label_Favorities" translatable="false">Favorities</string>
+
+    <string name="pref_Order_of_the_movies_Most_Popular" translatable="false">mostpopular</string>
+
+    <string name="pref_Order_of_the_movies_Highest_rated" translatable="false">highestrated</string>
+
+    <string name="pref_Order_of_the_movies_Favorities" translatable="false">favorities</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="movie_sipnopsis" translatable="false">SIPNOPSIS: </string>
+
+    <string name="content_authority">com.example.android.moviesapp.app</string>
+
+    <string name="action_share">share</string>
+
+    <string name="review">REVIEWS By:</string>
+
+    <string name="trailers">TRAILERS</string>
+
+    <string name="add_button">Add favorite</string>
+
+    <string name="release_date">Release date</string>
+
+    <string name="rating">Rating :</string>
+
+    <string name="trailer_1">Trailer 1</string>
+
+    <string name="trailer_2">Trailer 2</string>
+
+    <string name="trailer_3">Trailer 3</string>
+
+    <string name="trailer_4">Trailer 4</string>
+
+    <string name="by">By: </string>
+
+
+</resources>

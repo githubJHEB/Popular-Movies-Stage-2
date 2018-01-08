@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/fragment_detail"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16">
+
+        <LinearLayout
+            style="@style/fragment_detail"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_title_textview"
+                style="@style/fragment_detail_type"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/size_detail_title_textview"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/detail_image_poster"
+                android:layout_width="200dp"
+                android:layout_height="250dp" />
+
+            <LinearLayout
+                style="@style/fragment_detail_type"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:id="@+id/title_vote_average_textview"
+                    style="@style/fragment_detail_type"
+                    android:paddingBottom="4dp"
+                    android:text="@string/rating"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/size_fragment_detail_textview"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    style="@style/fragment_detail_type"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:id="@+id/rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="0.2"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/detail_vote_average_textview"
+                        style="@style/fragment_detail_type"
+                        android:layout_gravity="start"
+                        android:paddingTop="8dp"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/size_fragment_detail_textview" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/fragment_detail_type"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingTop="22dp">
+
+                    <TextView
+                        android:id="@+id/title_release_date_textview"
+                        style="@style/fragment_detail_type"
+                        android:layout_gravity="left"
+                        android:paddingBottom="4dp"
+                        android:text="@string/release_date"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/size_fragment_detail_textview"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_release_date_textview"
+                        style="@style/fragment_detail_type"
+                        android:layout_gravity="start"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/size_fragment_detail_textview" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/addfavorities"
+                    style="@style/fragment_detail_type"
+                    android:text="@string/add_button"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/fragment_detail_type"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/title_sypnopsis_textview"
+                style="@style/fragment_detail"
+                android:paddingTop="16dp"
+                android:text="@string/movie_sipnopsis"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/detail_sypnopsis_textview"
+                style="@style/fragment_detail"
+                android:paddingTop="16dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/fragment_detail_type"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/trailers"
+                style="@style/fragment_detail_review"
+                android:paddingTop="16dp"
+                android:text="@string/trailers"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                style="@style/fragment_detail_type"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/trailer1"
+                    style="@style/fragment_detail_trailers_button" />
+
+                <TextView
+                    android:id="@+id/textTrailer1"
+                    style="@style/fragment_detail_trailers_text"
+                    android:text="@string/trailer_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fragment_detail_type"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/trailer2"
+                    style="@style/fragment_detail_trailers_button" />
+
+                <TextView
+                    android:id="@+id/textTrailer2"
+                    style="@style/fragment_detail_trailers_text"
+                    android:text="@string/trailer_2" />/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fragment_detail_type"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/trailer3"
+                    style="@style/fragment_detail_trailers_button" />
+
+                <TextView
+                    android:id="@+id/textTrailer3"
+                    style="@style/fragment_detail_trailers_text"
+                    android:text="@string/trailer_3" />/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fragment_detail_type"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/trailer4"
+                    style="@style/fragment_detail_trailers_button" />
+
+                <TextView
+                    android:id="@+id/textTrailer4"
+                    style="@style/fragment_detail_trailers_text"
+                    android:text="@string/trailer_4" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fragment_detail_type"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/reviews"
+                    style="@style/fragment_detail_review"
+                    android:text="@string/review"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:id="@+id/buttonReviewTrailer1"
+                        style="@style/fragment_detail_trailers_reviews"
+                        android:textColor="@color/backgroundTextReview1" />
+
+                    <TextView
+                        android:id="@+id/buttonReviewTrailer2"
+                        style="@style/fragment_detail_trailers_reviews"
+                        android:textColor="@color/backgroundTextReview2" />
+
+                    <TextView
+                        android:id="@+id/buttonReviewTrailer3"
+                        style="@style/fragment_detail_trailers_reviews"
+                        android:textColor="@color/backgroundTextReview3" />
+
+                    <TextView
+                        android:id="@+id/buttonReviewTrailer4"
+                        style="@style/fragment_detail_trailers_reviews"
+                        android:textColor="@color/backgroundTextReview4" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textReview1"
+                    style="@style/fragment_detail_review"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
